@@ -13,9 +13,9 @@ namespace FunctionApp2
 {
     public static class Function1
     {
-        [FunctionName("Function1")]
+        [FunctionName("RenderPageHttpTrigger")]
         public static async Task<IActionResult> Run(
-            [HttpTrigger(AuthorizationLevel.Function, "get",  Route = "pages/rendar")] HttpRequest req, ExecutionContext context,
+            [HttpTrigger(AuthorizationLevel.Function, "get",  Route = "pages/capture")] HttpRequest req, ExecutionContext context,
             ILogger log)
         {
             log.LogInformation("C# HTTP trigger function processed a request.");
