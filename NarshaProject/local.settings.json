@@ -1,0 +1,7 @@
+{
+    "IsEncrypted": false,
+  "Values": {
+    "AzureWebJobsStorage": "DefaultEndpointsProtocol=https;AccountName=narshafacestorage;AccountKey=rVuKs1vLuchNaJcNlrW3dgGGZXzlTKluEK/7aPPN9TFO13dXJXCSJBCllbJgkN8nBgYjkRkuG6Tq1wVltdX/3g==;EndpointSuffix=core.windows.net",
+    "FUNCTIONS_WORKER_RUNTIME": "dotnet"
+  }
+}
