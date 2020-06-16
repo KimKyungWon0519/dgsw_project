@@ -9,13 +9,14 @@ using Microsoft.Extensions.Logging;
 using Newtonsoft.Json;
 using System.Text;
 
-namespace FunctionApp2
+namespace NarshaProject
 {
-    public static class Function1
+    public static class RenderPageHttpTrigger
     {
         [FunctionName("RenderPageHttpTrigger")]
         public static async Task<IActionResult> Run(
-            [HttpTrigger(AuthorizationLevel.Function, "get",  Route = "pages/capture")] HttpRequest req, ExecutionContext context,
+            [HttpTrigger(AuthorizationLevel.Function, "get", Route = "pages/render")] HttpRequest req,
+            ExecutionContext context,
             ILogger log)
         {
             log.LogInformation("C# HTTP trigger function processed a request.");
